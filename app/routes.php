@@ -23,5 +23,10 @@ Route::get('/portfolio', function(){
 });
 
 Route::get('/rolldice/{guess}', function($guess){
-	return View::make('temp.roll-dice')->with('guess', $guess);
+	$rand =  rand (1, 6);
+	$data = array(
+		'rand' => $rand,
+		'guess' => $guess
+	);
+	return View::make('temp.roll-dice')->with($data);
 });
