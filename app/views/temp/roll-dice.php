@@ -12,6 +12,7 @@ $rand =  rand ($min, $max);
     <title>Roll Dice</title>
 </head>
 <body>
-    <h1><?= $rand; ?></h1>
+	<h1>Guess: <?= $guess; ?></h1>
+    <h1>Random Number: <?= $rand; ?></h1>
 </body>
 </html>
