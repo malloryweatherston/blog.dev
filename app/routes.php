@@ -11,7 +11,7 @@
 |
 */
 Route::get('/', function(){
-	return 'We are home.';
+	return View::make('temp.my-first-view');
 });
 
 Route::get('/resume', function(){
@@ -20,4 +20,8 @@ Route::get('/resume', function(){
 
 Route::get('/portfolio', function(){
 	return 'This is my portfolio.';
+});
+
+Route::get('/rolldice/{guess}', function($guess){
+	return View::make('temp.roll-dice')->with('guess', $guess);
 });
