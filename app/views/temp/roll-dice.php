@@ -1,7 +1,7 @@
 <?php
 
-$max = 100;
-$min = 0;
+$max = 6;
+$min = 1;
 $rand =  rand ($min, $max);
 
 ?>
@@ -15,7 +15,7 @@ $rand =  rand ($min, $max);
 	<h1>Guess: <?= $guess; ?></h1>
     <h1>Random Number: <?= $rand; ?></h1>
     <? if ($rand == $guess) : ?>
-    <h1><? echo "Your guess matches the random number!"; ?><h1>
+    <h1>Your guess matches the random number!<h1>
     <? endif; ?>
 </body>
 </html>
