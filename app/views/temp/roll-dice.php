@@ -1,10 +1,4 @@
-<?php
 
-$max = 6;
-$min = 1;
-$rand =  rand ($min, $max);
-
-?>
 
 <!doctype html>
 <html lang="en">
