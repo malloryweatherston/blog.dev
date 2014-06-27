@@ -11,15 +11,15 @@
 |
 */
 Route::get('/', function(){
-	return View::make('temp.my-first-view');
+	return View::make('layout.master');
 });
 
 Route::get('/resume', function(){
-	return 'This is my resume.';
+	return View::make('pages.resume');
 });
 
 Route::get('/portfolio', function(){
-	return 'This is my portfolio.';
+	return View::make('pages.portfolio');
 });
 
 Route::get('/rolldice/{guess}', function($guess){
@@ -30,3 +30,4 @@ Route::get('/rolldice/{guess}', function($guess){
 	);
 	return View::make('temp.roll-dice')->with($data);
 });
+
