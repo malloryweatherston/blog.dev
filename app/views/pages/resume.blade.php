@@ -1,6 +1,6 @@
 @extends('layout.master')
 
-@section('contentresume')
+@section('content')
     <!DOCTYPE html>
 <html lang="en">
   <head>
