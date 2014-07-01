@@ -24,7 +24,7 @@ class PostsController extends \BaseController {
 	 */
 	public function create()
 	{
-		return View::make('posts/create');
+		return View::make('posts.create');
 	}
 
 
@@ -35,9 +35,19 @@ class PostsController extends \BaseController {
 	 */
 	public function store()
 	{	
-		Log::info(Input::all());
-
-		return Redirect::back()->withInput();
+		$validator = Validator::make(Input::all(), Post::$rules);
+		if ($validator->fails()) 
+		{
+			return Redirect::back()->withInput()->withErrors($validator);
+		}
+		else
+		{
+			$post = new Post();
+			$post->title = Input::get('Title');
+			$post->body= Input::get('Body');
+			$post->save();
+			return Redirect::action('PostsController@index');
+		}
 	}
 
 
@@ -49,6 +59,7 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{
+
 		$post = Post::find($id);
 		return View::make('posts.show')->with('post', $post);
  		
