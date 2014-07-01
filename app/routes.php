@@ -17,6 +17,10 @@ Route::get('/', function(){
 	return View::make('layout.master');
 });
 
+Route::get('/home', function(){
+	return View::make('pages.home');
+});
+
 Route::get('/resume', function(){
 	return View::make('pages.resume');
 });
