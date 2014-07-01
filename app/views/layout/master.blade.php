@@ -28,21 +28,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">MALL<i class="fa fa-circle"></i>RY</a>
+          <a class="navbar-brand" href="home">MALL<i class="fa fa-circle"></i>RY</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="blog.dev">HOME</a></li>
-            <li><a href="spot/theme/about.html">ABOUT</a></li>
-            <li><a href="spot/theme/services.html">RESUME</a></li>
-            <li><a href="spot/theme/works.html">PORTFOLIO</a></li>
-            <li><a href="spot/theme/about.html">BLOG</a></li>
+            <li class="active"><a href="home">HOME</a></li>
+            <li><a href="about">ABOUT</a></li>
+            <li><a href="resume">RÉSUMÉ</a></li>
+            <li><a href="portfolio">PORTFOLIO</a></li>
+            <li><a href="posts">BLOG</a></li>
             <li><a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
-    <br>
+    
     
     @yield('content')
 
