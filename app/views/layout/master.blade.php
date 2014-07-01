@@ -11,17 +11,17 @@
     <title>Mallory Weatherston</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="spot/theme/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="spot/theme/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/spot/theme/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/spot/theme/assets/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="spot/theme/assets/css/main.css" rel="stylesheet">
+    <link href="/spot/theme/assets/css/main.css" rel="stylesheet">
 
 </head>
 <body>
     @yield('content')
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
 </body>
 </html>
