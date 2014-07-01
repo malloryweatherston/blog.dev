@@ -3,6 +3,9 @@
 @section('content')
 
 <h1>Create New Post</h1>
+@if ($errors->has('Title'))
+	{{$errors->first('Title', '<span class="help-block">:message</span>')}}
+@endif
 <form method="POST" action = "{{{ action('PostsController@store') }}}">
 	<p>
 		<label for="Title">Title:</label>
