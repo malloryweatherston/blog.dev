@@ -29,6 +29,10 @@ Route::get('/portfolio', function(){
 	return View::make('pages.portfolio');
 });
 
+Route::get('/about', function(){
+	return View::make('pages.about');
+});
+
 Route::get('/sayhello/{name}', 'HomeController@sayHello');
 
 Route::resource('posts', 'PostsController');
