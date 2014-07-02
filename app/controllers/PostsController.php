@@ -23,7 +23,7 @@ class PostsController extends \BaseController {
 	 * @return Response
 	 */
 	public function create()
-	{
+	{	
 		return View::make('posts.create-edit');
 	}
 
@@ -39,16 +39,27 @@ class PostsController extends \BaseController {
 
 		$validator = Validator::make(Input::all(), Post::$rules);
 		if ($validator->fails()) 
-		{
+		{	
+			Session::flash('errorMessage', 'There were errors submitting your form');
+
+			// retrieve flash data (same as any other session variable)
+
 			return Redirect::back()->withInput()->withErrors($validator);
+
 		}
 		else
-		{
+		{	
+
 			$post = new Post();
 			$post->title = Input::get('title');
 			$post->body= Input::get('body');
 			$post->save();
-			return Redirect::action('PostsController@index');
+			// set flash data
+			Session::flash('successMessage', 'Post created successfully');
+
+			// retrieve flash data (same as any other session variable)
+
+			return Redirect::action('PostsController@show');
 		}
 	}
 
@@ -91,15 +102,24 @@ class PostsController extends \BaseController {
 	{	
 		$validator = Validator::make(Input::all(), Post::$rules);
 		if ($validator->fails()) 
-		{
+		{	// set flash data
+			Session::flash('errorMessage', 'Post update Failed');
+
+			// retrieve flash data (same as any other session variable)
+			
 			return Redirect::back()->withInput()->withErrors($validator);
 		}
 		else
-		{
+		{	
 			$post = Post::find($id);
 			$post->title = Input::get('title');
 			$post->body= Input::get('body');
 			$post->save();
+			// set flash data
+			Session::flash('successMessage', 'Post updated successfully');
+
+			// retrieve flash data (same as any other session variable)
+
 			return Redirect::action('PostsController@index');
 		}
 		
@@ -113,8 +133,11 @@ class PostsController extends \BaseController {
 	 * @return Response
 	 */
 	public function destroy($id)
-	{
-		return "jkhkjhkjhkj";
+	{	$post = Post::findOrFail($id);
+		$post->delete();
+		Session::flash('successMessage', 'Post deleted successfully');
+
+		return Redirect::action('posts.index');
 	}
 
 
