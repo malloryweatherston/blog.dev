@@ -37,12 +37,20 @@
             <li><a href="resume">RÉSUMÉ</a></li>
             <li><a href="portfolio">PORTFOLIO</a></li>
             <li><a href="posts">BLOG</a></li>
-            <li><a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a></li>
+            <!-- <li><a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a></li> -->
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
-    
+    <div>
+    	 @if (Session::has('successMessage'))
+    		<div class="alert alert-success">{{{ Session::get('successMessage') }}}</div>
+		@endif
+		@if (Session::has('errorMessage'))
+    		<div class="alert alert-danger">{{{ Session::get('errorMessage') }}}</div>
+		@endif
+	</div>
+
     
     @yield('content')
 
