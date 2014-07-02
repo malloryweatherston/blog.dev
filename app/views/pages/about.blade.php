@@ -17,26 +17,26 @@
 			<br><br>
 			<div class="col-lg-3">
 				<img class="img-circle" src="/public/spot/themes/assets/img/grad.jpg" width="110" height="110" alt="">
-				<h4>UT Austin Grad</h4>
-				<p>Hook 'Em!</p>
+				<h4></h4>
+				<p></p>
 				
 			</div><!-- col-lg-3 -->
 
 			<div class="col-lg-3">
 				<img class="img-circle" src="/public/spot/themes/assets/img/fortune.jpg" width="110" height="110" alt="">
-				<h4>Creator</h4>
-				<p>Dreamer, Designer, Doer</p>
+				<h4></h4>
+				<p></p>
 			</div><!-- col-lg-3 -->
 
 			<div class="col-lg-3">
 				<img class="img-circle" src="/public/spot/themes/assets/img/pic3.jpg" width="110" height="110" alt="">
-				<h4>ENFJ Personality Type</h4>
+				<h4></h4>
 				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
 			</div><!-- col-lg-3 -->
 
 			<div class="col-lg-3">
 				<img class="img-circle" src="/public/spot/themes/assets/img/pic4.jpg" width="110" height="110" alt="">
-				<h4>Dog Lover</h4>
+				<h4></h4>
 				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
 			</div><!-- col-lg-3 -->
 
