@@ -10,12 +10,22 @@
 			</div><!-- row -->
 		</div><!-- container -->
 	</div><!--  bluewrap -->
+	<div align= "center">
 	<h2 align="center">Skills and Attributes</h2>
-	<p>•	Web programming experience with HTML/CSS, JavaScript, jQuery, Laravel, PHP, MySQL, Linux, Apache, Twitter Bootstrap, Git, GitHub</p>
-	<p>•	Proficiency in GIS software (ESRI ArcGIS 10, ERDAS Imagine, GeoDa, Google Maps, MapInfo)</p>
-	<p>•	Experience with Adobe Photoshop</p>
-	<h2 align="center">Jobs and Internships</p>
-
+	<!-- <div align="left"> -->
+	•	Web programming experience with HTML/CSS, JavaScript, jQuery, Laravel, PHP, MySQL, Linux, Apache, Twitter Bootstrap, Git, GitHub<br>
+	•	Proficiency in GIS software (ESRI ArcGIS 10, ERDAS Imagine, GeoDa, Google Maps, MapInfo)<br>
+	•	Experience with Adobe Photoshop<br>
+	<!-- </div> -->
+	<h2 align="center">Education</h2>
+		<h3><b>Codeup</b></h3>
+			Full-time 11-week course teaching the LAMP stack (Linux, Apache, MySQL, PHP) as well as JavaScript, 
+			jQuery, HTML/CSS, Laravel and Twitter Bootstrap<br>
+		<h3><b>The University of Texas at Austin</b></h3>
+			Bachelor of Arts in Geography, GIS Track <br>
+			Business Foundations Certificate Program
+	<h2 align="center">Jobs and Internships</h2>
+</div>
 
 
 
