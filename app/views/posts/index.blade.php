@@ -15,7 +15,7 @@
 
 	@foreach ($posts as $post) 
 		<h2>{{link_to_action('PostsController@show', $post->title, array($post->id))}}</h2>
-		<h5>{{{$post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A')}}}</h5>
+		<h5>{{{$post->created_at->format('l, F jS Y @ h:i:s A')}}}</h5>
 		<h4>{{{$post->body}}}</h4>
 		<p>{{link_to_action('PostsController@edit', 'Edit', array($post->id), array('class' => 'btn btn-default'))}}</p>
 	@endforeach
