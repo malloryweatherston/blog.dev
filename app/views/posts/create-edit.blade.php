@@ -17,6 +17,7 @@
 		</div><!-- container -->
 	</div><!--  bluewrap -->
 <br>
+<div align="center">
 @if (isset($post))
 	{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'PUT')) }}
 @else
@@ -39,4 +40,5 @@
 
 
 {{ Form::close() }}
+</div>
 @stop

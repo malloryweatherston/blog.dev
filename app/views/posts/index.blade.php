@@ -10,7 +10,7 @@
 			</div><!-- row -->
 		</div><!-- container -->
 	</div><!--  bluewrap -->
-
+	<div align="center">
 	<h4>{{link_to_action('PostsController@create', ' + Create a New Post')}}</h4>
 
 	@foreach ($posts as $post) 
@@ -23,5 +23,5 @@
 
 	{{ $posts->links() }}
 	
-
+	<div>
 @stop
