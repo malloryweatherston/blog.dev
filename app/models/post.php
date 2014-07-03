@@ -12,4 +12,8 @@ class Post extends BaseModel {
     	'body' => 'required|max:2000'
     ];
 
+    public function user()
+	{
+    	return $this->belongsTo('User');
+	}
 }
