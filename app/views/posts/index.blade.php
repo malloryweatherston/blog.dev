@@ -16,7 +16,7 @@
 	@foreach ($posts as $post) 
 		<h2>{{link_to_action('PostsController@show', $post->title, array($post->id))}}</h2>
 		<h5>{{{$post->created_at->format('l, F jS Y @ h:i:s A')}}}</h5>
-		<h4>{{{$post->body}}}</h4>
+		<h4>{{{ substr($post->body, 0, 5) .'...' }}}</h4>
 		<p>{{link_to_action('PostsController@edit', 'Edit', array($post->id), array('class' => 'btn btn-default'))}}</p>
 	@endforeach
 	
