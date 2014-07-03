@@ -17,6 +17,8 @@
 	•	Proficiency in GIS software (ESRI ArcGIS 10, ERDAS Imagine, GeoDa, Google Maps, MapInfo)<br>
 	•	Experience with Adobe Photoshop<br>
 	<!-- </div> -->
+	<h2 style="color:#ff7878" align="center">Jobs and Internships</h2>
+	
 	<h2 style="color:#ff7878" align="center">Education</h2>
 		<h3>Codeup</h3>
 			Full-time 12-week course teaching the LAMP stack (Linux, Apache, MySQL, PHP) as well as JavaScript,<br>
@@ -24,7 +26,7 @@
 		<h4>The University of Texas at Austin</h4>
 			Bachelor of Arts in Geography, GIS Track <br>
 			Business Foundations Certificate Program
-	<h2 style="color:#ff7878" align="center">Jobs and Internships</h2>
+	
 </div>
 
 
