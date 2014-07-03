@@ -22,6 +22,12 @@
 	
 
 	{{ $posts->links() }}
+
+	{{ Form::open(array('action' => 'PostsController@index', 'method' => 'GET')) }}
+	{{ Form::text('search', null, array('placeholder'=>'Search'))}}
+	<button type="Submit">Search Posts</button>
+	{{ Form::close() }}
+	<br>
 	
 	<div>
 @stop
