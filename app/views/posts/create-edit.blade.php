@@ -19,9 +19,9 @@
 <br>
 <div align="center">
 @if (isset($post))
-	{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'PUT')) }}
+	{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'PUT', 'files' => true)) }}
 @else
-	{{ Form::open(array('action' => 'PostsController@store')) }}
+	{{ Form::open(array('action' => 'PostsController@store', 'files' => true)) }}
 @endif
 
 @if ($errors->has('title'))
@@ -33,8 +33,10 @@
 	{{ Form::label('title', 'Title:')}}
 	{{ Form::text('title')}}
 	<br>
-	{{ Form::label('body', 'Body:')}}
-	{{ Form::textarea('body')}}
+	{{ Form::label('image', 'Image Upload:')}}
+	{{ Form::file('image')}}
+	<br>
+	{{ Form::label('body', 'Body:')}} {{ Form::textarea('body')}}
 	<br>
 	<button type="Submit">Create</button>
 

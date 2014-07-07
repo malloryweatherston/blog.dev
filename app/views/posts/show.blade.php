@@ -14,6 +14,9 @@
 		<h2>{{{$post->title}}}</h2>
 		<h5>{{{$post->created_at->format('l, F jS Y @ h:i:s A')}}}</h5>
 		<h4>{{{$post->body}}}</h4>
+		@if ($post->img_path)
+			<img src="{{{ $post->img_path }}}">
+		@endif
 
 		{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'DELETE' )) }}
 			{{ Form::submit('Delete') }}
