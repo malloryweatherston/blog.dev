@@ -14,6 +14,6 @@
 
 		<!-- <h2>Whack-A-Mole Game</h2>
 		<h4><a href="https://github.com/malloryweatherston/Codeup_Web_Exercises/blob/master/public/whack.html">View Source Code</a></h4>
-		<iframe src="http://codeup.dev/whack.html" style="width: 50%; height: 800px"></iframe> -->
+		<iframe src="http://codeup.dev/whack.html" style="width: 50%; height: 800px"></iframe>  -->
 	</div>
 @stop

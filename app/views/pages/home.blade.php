@@ -33,7 +33,7 @@
 
 	<div id="headerwrap">
 		<div class="container">
-			<div class="row centered">
+			<div id="test" class="row centered">
 				<div class="col-lg-8 col-lg-offset-2">
 				<h1><b>Mallory Weatherston</b></h1>
 				<h2>Web Developer</h2>
@@ -43,7 +43,7 @@
 	</div><!-- headerwrap -->
 
 	
-
+<!-- 
 	<div class="container w">
 		<div class="row centered">
 			<br><br>
@@ -53,30 +53,30 @@
 				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
 			</div><!-- col-lg-4 -->
 
-			<div class="col-lg-4">
+			<!-- <div class="col-lg-4">
 				<i class="fa fa-laptop"></i>
 				<h4>BOOTSTRAP</h4>
 				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
-			</div><!-- col-lg-4 -->
-
+			</div><!-- col-lg-4 --> 
+<!-- 
 			<div class="col-lg-4">
 				<i class="fa fa-trophy"></i>
 				<h4>SUPPORT</h4>
 				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
 			</div><!-- col-lg-4 -->
-		</div><!-- row -->
-		<br>
-		<br>
-	</div><!-- container -->
-
+		<!-- </div><!-- row --> 
+		<!-- <br> -->
+		<!-- <br> -->
+	<!-- </div>container -->
+ 
 
 	<!-- FEATURE SECTION -->
 	<div class="container wb">
 		<div class="row centered">
 			<br><br>
 			<div class="col-lg-8 col-lg-offset-2">
-				<h4>WE CREATE FIRST CLASS DESIGN</h4>
-				<p>By being true to the brand we represent, we elevate the audiences’ relationship to it. Like becomes love becomes a passion. Passion becomes advocacy. And we see the brand blossom from within, creating a whole story the audience embraces. That’s when the brand can truly flex its muscles.</p>
+				<h4>ABOUT ME</h4>
+				<p>I'm an enthusiastic young web developer with a passion for helping people, learning new things, and creating unique products.</p>
 			<p><br/><br/></p>
 			</div>
 		</div><!-- row -->
@@ -89,7 +89,7 @@
 			<div class="row centered">
 				<div class="col-lg-8 col-lg-offset-2">
 					<h4>CONTACT</h4>
-					<p>We believe ideas come from everyone, everywhere. At BlackTie, everyone within our agency walls is a designer in their own right. And there are a few principles we believe—and we believe everyone should believe—about our design craft. These truths drive us, motivate us, and ultimately help us redefine the power of design.</p>
+					<p>mjw0909@sbcglobal.net</p>
 				</div>
 			</div><!-- row -->
 		</div><!-- container -->
@@ -115,6 +115,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+   
   </body>
 </html>
 
