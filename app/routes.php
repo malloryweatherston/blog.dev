@@ -17,13 +17,7 @@ Route::get('/logout', 'HomeController@logout');
 
 
 
-Route::get('/', 'HomeController@showWelcome');
-
 Route::get('/', function(){
-	return View::make('layout.master');
-});
-
-Route::get('/home', function(){
 	return View::make('pages.home');
 });
 
