@@ -11,13 +11,13 @@
 		</div><!-- container -->
 	</div><!--  bluewrap -->
 	<div align="center">
-	<h4>{{link_to_action('PostsController@create', ' + Create a New Post')}}</h4>
+	<!-- <h4>{{link_to_action('PostsController@create', ' + Create a New Post')}}</h4> -->
 
 
 	@foreach ($posts as $post) 
 		<h2>{{link_to_action('PostsController@show', $post->title, array($post->id))}}</h2>
 		<h5>{{{$post->created_at->format('l, F jS Y @ h:i:s A')}}}</h5>
-		<h5>{{{$post->user->email}}}</h5>
+		<h5>Author: {{{$post->user->email}}}</h5>
 		<h4>{{{ substr($post->body, 0, 5) .'...' }}}</h4>
 		<p>{{link_to_action('PostsController@edit', 'Edit', array($post->id), array('class' => 'btn btn-default'))}}</p>
 	@endforeach
