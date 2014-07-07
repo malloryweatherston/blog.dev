@@ -19,6 +19,9 @@
 
 </head>
 <body>
+	<br>
+
+		
 	 <!-- Fixed navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -36,6 +39,16 @@
             <li><a href="resume">RÉSUMÉ</a></li>
             <li><a href="portfolio">PORTFOLIO</a></li>
             <li><a href="posts">BLOG</a></li>
+            	@if (Auth::check())
+		 		<!-- user is logged in -->
+					{{ Auth::user()->email }}<br>
+					{{ link_to_action('PostsController@create', 'Create Post') }}<br>
+					{{ link_to_action('HomeController@logout', 'Log Out') }}<br>
+				@else
+   				<!-- user not NOT logged in -->
+    				{{ link_to_action('HomeController@showLogin', 'Log In') }}
+    			@endif
+            <!-- <li><a href="login">LOG IN</a></li> -->
             <!-- <li><a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a></li> -->
           </ul>
         </div><!--/.nav-collapse -->
