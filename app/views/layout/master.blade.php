@@ -31,7 +31,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="home">MALL<i class="fa fa-circle"></i>RY</a>
+          <a class="navbar-brand" href="/">MALL<i class="fa fa-circle"></i>RY</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
