@@ -24,5 +24,29 @@ class HomeController extends BaseController {
 		$data = array('name' => $name);
 	    return View::make('my-first-view')->with($data);
 	}
+	public function showLogin()
+	{
+		return View::make('pages.login');
+	}
+	public function doLogin()
+	{
+		$email = Input::get('email');
+		$password = Input::get('password');
+		if (Auth::attempt(array('email' => $email, 'password' => $password)))
+		{
+    		return Redirect::intended(action('PostsController@index'));
+		}
+		else
+		{
+    		Session::flash('errorMessage', 'Email or password not found.');
+    		return Redirect::action('HomeController@showLogin');
+		}
+	}
+
+	public function logout()
+	{
+		Auth::logout();
+		return Redirect::action('PostsController@index');
+	}
 
 }
