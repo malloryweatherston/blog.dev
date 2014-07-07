@@ -19,7 +19,7 @@
 
 </head>
 <body>
-	<br>
+	
 
 		
 	 <!-- Fixed navbar -->
@@ -35,26 +35,26 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="home">HOME</a></li>
-            <li><a href="resume">RÉSUMÉ</a></li>
-            <li><a href="portfolio">PORTFOLIO</a></li>
-            <li><a href="posts">BLOG</a></li>
+            <li class="active"><a href="/">HOME</a></li>
+            <li><a href="/resume">RÉSUMÉ</a></li>
+            <li><a href="/portfolio">PORTFOLIO</a></li>
+            <li><a href="/posts">BLOG</a></li>
+            	
             	@if (Auth::check())
 		 		<!-- user is logged in -->
-					{{ Auth::user()->email }}<br>
-					{{ link_to_action('PostsController@create', 'Create Post') }}<br>
-					{{ link_to_action('HomeController@logout', 'Log Out') }}<br>
+					<li>{{ link_to_action('HomeController@logout', 'LOG OUT') }}</li>
+					<li>{{ Auth::user()->email }}<br>
+					{{ link_to_action('PostsController@create', 'Create a New Post') }}</li>
 				@else
    				<!-- user not NOT logged in -->
-    				{{ link_to_action('HomeController@showLogin', 'Log In') }}
+    				<li>{{ link_to_action('HomeController@showLogin', 'LOG IN') }}</li>
     			@endif
-            <!-- <li><a href="login">LOG IN</a></li> -->
-            <!-- <li><a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a></li> -->
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
     <div>
+    	<br>
     	 @if (Session::has('successMessage'))
     		<div class="alert alert-success">{{{ Session::get('successMessage') }}}</div>
 		@endif
