@@ -8,7 +8,7 @@ class PostsController extends \BaseController {
 	    parent::__construct();
 
 	    // run auth filter before all methods on this controller except index and show
-	    $this->beforeFilter('auth.basic', array('except' => array('index', 'show')));
+	    $this->beforeFilter('auth', array('except' => array('index', 'show')));
 	}
 
 	/**
@@ -18,7 +18,7 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{	
-		$posts = Post::with('user')->paginate(4);
+		//$posts = Post::with('user')->paginate(4);
 		if (Input::has('search')){
 			$search = Input::get('search');
 			$posts = Post::with('user')->orderBy('created_at', 'desc')->where("title", "LIKE", "%$search%")->paginate(4);
@@ -65,6 +65,7 @@ class PostsController extends \BaseController {
 		{	
 
 			$post = new Post();
+			$post->user()->associate(Auth::user());
 			$post->title = Input::get('title');
 			$post->body= Input::get('body');
 			$post->save();
@@ -73,7 +74,7 @@ class PostsController extends \BaseController {
 
 			// retrieve flash data (same as any other session variable)
 
-			return Redirect::action('PostsController@show');
+			return Redirect::action('PostsController@index');
 		}
 	}
 
