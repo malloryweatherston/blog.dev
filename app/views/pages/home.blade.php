@@ -40,43 +40,16 @@
 				</div>
 			</div><!-- row -->
 		</div><!-- container -->
-	</div><!-- headerwrap -->
+	</div><!-- headerwrap --> 
 
 	
-<!-- 
-	<div class="container w">
-		<div class="row centered">
-			<br><br>
-			<div class="col-lg-4">
-				<i class="fa fa-heart"></i>
-				<h4>DESIGN</h4>
-				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
-			</div><!-- col-lg-4 -->
-
-			<!-- <div class="col-lg-4">
-				<i class="fa fa-laptop"></i>
-				<h4>BOOTSTRAP</h4>
-				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
-			</div><!-- col-lg-4 --> 
-<!-- 
-			<div class="col-lg-4">
-				<i class="fa fa-trophy"></i>
-				<h4>SUPPORT</h4>
-				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
-			</div><!-- col-lg-4 -->
-		<!-- </div><!-- row --> 
-		<!-- <br> -->
-		<!-- <br> -->
-	<!-- </div>container -->
- 
-
 	<!-- FEATURE SECTION -->
 	<div class="container wb">
 		<div class="row centered">
 			<br><br>
 			<div class="col-lg-8 col-lg-offset-2">
 				<h4>ABOUT ME</h4>
-				<p>I'm an enthusiastic young web developer with a passion for helping people, learning new things, and creating unique products.</p>
+				<p>I am an enthusiastic young web developer with a background in GIS and business. I am passionate about helping people, learning new things, and creating unique products. Please contact me if you would like to collaborate or connect!</p>
 			<p><br/><br/></p>
 			</div>
 		</div><!-- row -->
