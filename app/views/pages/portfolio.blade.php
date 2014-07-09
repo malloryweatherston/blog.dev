@@ -10,10 +10,35 @@
 		</div><!-- container -->
 	</div><!--  bluewrap -->
 	<br>
-	<div align="center">
+	
+	<p align="center">These are a few of the web applications I have developed using PHP, Javascript, CSS, and HTML.</p>
 
-		<!-- <h2>Whack-A-Mole Game</h2>
-		<h4><a href="https://github.com/malloryweatherston/Codeup_Web_Exercises/blob/master/public/whack.html">View Source Code</a></h4>
-		<iframe src="http://codeup.dev/whack.html" style="width: 50%; height: 800px"></iframe>  -->
-	</div>
+		
+		<div id="container">
+			<div class="row">
+		
+						<div class="box red" align="center">
+							<h3>Whack-a-Mole Game</h3>
+							<h3><a href="https://github.com/malloryweatherston/Codeup_Web_Exercises/blob/master/public/whack.html">View Source Code</h3>
+						</div>
+						<div class="box orange" align="center">
+							<h3>Todo List</h3>
+							<h3><a href="https://github.com/malloryweatherston/Web_Todo_List/blob/master/public/todo_list.php"> View Source Code</h3>
+						</div>
+						<div class="box yellow" align="center">
+							<h3>Todo List</h3>
+							<h3>
+						</div>
+			<!-- <div class="box green">
+				
+			</div>
+			<div class="box blue">
+				
+			</div>
+			<div class="box purple">
+				
+			</div> -->
+			</div>
+		</div>
+
 @stop
