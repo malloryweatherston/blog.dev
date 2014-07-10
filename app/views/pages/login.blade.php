@@ -20,7 +20,7 @@
 		{{ Form::label('password', 'Password:')}}
 		{{ Form::password('password')}}
 		<br>
-		<button type="Submit">Log In</button>
+		<button type="Submit" class="btn btn-default">Log In</button>
 
 
 	    {{ Form::close() }}
