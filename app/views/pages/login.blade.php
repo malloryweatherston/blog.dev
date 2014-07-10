@@ -7,7 +7,7 @@
 		<div class="container">
 			<div class="row centered">
 				<div class="col-lg-8 col-lg-offset-2">
-				<h2>PLEASE LOG IN</h2>
+				<h1>PLEASE LOG IN</h1>
 				</div>
 			</div><!-- row -->
 		</div><!-- container -->
@@ -25,4 +25,10 @@
 
 	    {{ Form::close() }}
 	</div>
+	<!--  <div align="center">
+		<div class="footer">
+    		<div class="container">
+        		<p class="text-muted">&copy; Mallory Weatherston 2014. All rights reserved.</p>
+      		</div>
+    	</div> -->
 @stop
