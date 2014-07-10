@@ -40,8 +40,7 @@
             <li class="active"><a href="/">HOME</a></li>
             <li><a href="/resume">RÉSUMÉ</a></li>
             <li><a href="/portfolio">PORTFOLIO</a></li>
-            <li><a href="/posts">BLOG</a></li>
-            	
+            <li><a href="/posts">BLOG</a></li>	
             	@if (Auth::check())
 		 		<!-- user is logged in -->
 					<li>{{ link_to_action('HomeController@logout', 'LOG OUT') }}</li>
@@ -56,7 +55,7 @@
       </div>
     </div>
     <div>
-    	<br>
+    
     	 @if (Session::has('successMessage'))
     		<div class="alert alert-success">{{{ Session::get('successMessage') }}}</div>
 		@endif
