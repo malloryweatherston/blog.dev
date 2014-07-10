@@ -19,7 +19,8 @@
 			</div><!-- row -->
 		</div><!-- container -->
 	</div><!--  bluewrap -->
-<br>
+	<br>
+
 <div align="center">
 				@if (isset($post))
 					{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'PUT', 'files' => true)) }}
@@ -44,7 +45,10 @@
             				<div id="wmd-button-bar"></div>
 					 		{{ Form::textarea('body', null, array('class'=>'wmd-input', 'id'=>'wmd-input')) }}
 							<br>
-							<button type="Submit">Create</button>
+							<button type="Submit" class="btn btn-default">Create</button>
+							{{ Form::close() }}
+							{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'DELETE' )) }}
+							{{ Form::submit('Delete') }}
 							{{ Form::close() }}
 						</div>
 					</div>
