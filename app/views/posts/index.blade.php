@@ -5,7 +5,7 @@
 		<div class="container">
 			<div class="row centered">
 				<div class="col-lg-8 col-lg-offset-2">
-				<h2>MALLORY WEATHERSTON'S BLOG</h2>
+				<h1>MALLORY WEATHERSTON'S BLOG</h1>
 				</div>
 			</div><!-- row -->
 		</div><!-- container -->
@@ -22,13 +22,15 @@
 
 	
 	@foreach ($posts as $post) 
-	<hr>
-		<h1>{{link_to_action('PostsController@show', $post->title, array($post->id))}}</h1>
-		<h4>{{{$post->created_at->format('l, F jS Y @ h:i:s A')}}}</h4>
+	<hr style="width:50%;">
+		<h1><b>{{link_to_action('PostsController@show', $post->title, array($post->id))}}</b></h1>
+		<h5>{{{$post->created_at->format('l, F jS Y @ h:i:s A')}}}</h5>
 		<h5>Author: {{{$post->user->first_name}}} {{{$post->user->last_name}}}</h5>
 		<h3>{{ substr($post->renderBody(), 0, 10) .'...' }}</h3>
+		@if (Auth::check())
 		<p>{{link_to_action('PostsController@edit', 'Edit', array($post->id), array('class' => 'btn btn-default'))}}</p>
-		<p>{{link_to_action('PostsController@show', 'Read More', array($post->id), array('class' => 'btn btn-default'))}}
+		@endif
+		<p>{{link_to_action('PostsController@show', 'Read More', array($post->id), array('class' => 'btn btn-default'))}}</p>
 	@endforeach
 	
 
