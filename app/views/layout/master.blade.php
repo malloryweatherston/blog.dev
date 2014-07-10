@@ -67,9 +67,15 @@
     @yield('topscript')
     @yield('content')
     @yield('bottomscript')
-
+    <br>
+    <div align="center">
+    <div id="footer">
+  		<div class="container">
+    		<p class="text-muted">&copy; Mallory Weatherston 2014. All rights reserved.</p>
+  		</div>
+	</div>
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/spot/theme/assets/js/bootstrap.min.js"></script>
     
 </body>
 </html>
