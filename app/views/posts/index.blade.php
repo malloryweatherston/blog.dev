@@ -12,24 +12,29 @@
 	</div><!--  bluewrap -->
 	<div align="center">
 	<!-- <h4>{{link_to_action('PostsController@create', ' + Create a New Post')}}</h4> -->
+	<div class="form-group">
+			<h4>Blog Search</h4>
+			{{ Form::open(array('action' => 'PostsController@index', 'method' => 'GET')) }}
+			{{ Form::text('search', null, array('placeholder'=>'Search'))}}
+		    <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+			{{ Form::close() }}
+	</div>
 
-
+	
 	@foreach ($posts as $post) 
-		<h2>{{link_to_action('PostsController@show', $post->title, array($post->id))}}</h2>
-		<h5>{{{$post->created_at->format('l, F jS Y @ h:i:s A')}}}</h5>
+	<hr>
+		<h1>{{link_to_action('PostsController@show', $post->title, array($post->id))}}</h1>
+		<h4>{{{$post->created_at->format('l, F jS Y @ h:i:s A')}}}</h4>
 		<h5>Author: {{{$post->user->first_name}}} {{{$post->user->last_name}}}</h5>
-		<h4>{{ substr($post->renderBody(), 0, 10) .'...' }}</h4>
+		<h3>{{ substr($post->renderBody(), 0, 10) .'...' }}</h3>
 		<p>{{link_to_action('PostsController@edit', 'Edit', array($post->id), array('class' => 'btn btn-default'))}}</p>
+		<p>{{link_to_action('PostsController@show', 'Read More', array($post->id), array('class' => 'btn btn-default'))}}
 	@endforeach
 	
 
-	{{ $posts->links() }}
 
-	{{ Form::open(array('action' => 'PostsController@index', 'method' => 'GET')) }}
-	{{ Form::text('search', null, array('placeholder'=>'Search'))}}
-	<button type="Submit">Search Posts</button>
-	{{ Form::close() }}
-	<br>
+	{{ $posts->links() }}
 	
-	<div>
+		<br>
+	</div>
 @stop
