@@ -16,27 +16,28 @@
 			<h4>Blog Search</h4>
 			{{ Form::open(array('action' => 'PostsController@index', 'method' => 'GET')) }}
 			{{ Form::text('search', null, array('class' => 'form-control', 'placeholder'=>'Search'))}}
+		    <br>
 		    <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span> Search </button>
 			{{ Form::close() }}
 	</div>
 
 	
-	@foreach ($posts as $post) 
-	<hr style="width:50%;">
-		<h1><b>{{link_to_action('PostsController@show', $post->title, array($post->id))}}</b></h1>
-		<h5>{{{$post->created_at->format('l, F jS Y @ h:i:s A')}}}</h5>
-		<h5>Author: {{{$post->user->first_name}}} {{{$post->user->last_name}}}</h5>
-		<h3>{{ substr($post->renderBody(), 0, 10) .'...' }}</h3>
-		@if (Auth::check())
-		<p>{{link_to_action('PostsController@edit', 'Edit', array($post->id), array('class' => 'btn btn-default'))}}</p>
-		@endif
-		<p>{{link_to_action('PostsController@show', 'Read More', array($post->id), array('class' => 'btn btn-primary'))}}</p>
-	@endforeach
-	
+		@foreach ($posts as $post) 
+		<hr style="width:50%;">
+			<h1><b>{{link_to_action('PostsController@show', $post->title, array($post->id))}}</b></h1>
+			<h5>{{{$post->created_at->format('l, F jS Y @ h:i:s A')}}}</h5>
+			<h5>Author: {{{$post->user->first_name}}} {{{$post->user->last_name}}}</h5>
+			<h3>{{ substr($post->renderBody(), 0, 10) .'...' }}</h3>
+			@if (Auth::check())
+			<p>{{link_to_action('PostsController@edit', 'Edit', array($post->id), array('class' => 'btn btn-default'))}}</p>
+			@endif
+			<p>{{link_to_action('PostsController@show', 'Read More', array($post->id), array('class' => 'btn btn-primary'))}}</p>
+		@endforeach
+		
 
 
-	{{ $posts->links() }}
-	
+		{{ $posts->links() }}
+		
 		<br>
 	</div>
 @stop
