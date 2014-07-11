@@ -12,17 +12,20 @@
 			</div><!-- row -->
 		</div><!-- container -->
 	</div><!--  bluewrap -->
+	<div style="width:20%">
 	    <br>
 	    {{ Form::open(array('action' => 'HomeController@doLogin')) }}
 	    {{ Form::label('email', 'Email:')}}
-		{{ Form::text('email')}}
+		{{ Form::text('email',null, array('class' => 'form-control'))}}
 		<br>
 		{{ Form::label('password', 'Password:')}}
-		{{ Form::password('password')}}
+		{{ Form::password('password', array('class' => 'form-control'))}}
 		<br>
 		<button type="Submit" class="btn btn-default">Log In</button>
 
+			
 
 	    {{ Form::close() }}
+		</div>
 	</div>
 @stop
