@@ -25,10 +25,4 @@
 
 	    {{ Form::close() }}
 	</div>
-	<!--  <div align="center">
-		<div class="footer">
-    		<div class="container">
-        		<p class="text-muted">&copy; Mallory Weatherston 2014. All rights reserved.</p>
-      		</div>
-    	</div> -->
 @stop
