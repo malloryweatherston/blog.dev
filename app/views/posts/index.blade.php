@@ -12,11 +12,11 @@
 	</div><!--  bluewrap -->
 	<div align="center">
 	<!-- <h4>{{link_to_action('PostsController@create', ' + Create a New Post')}}</h4> -->
-	<div class="form-group">
+	<div class="form-group" style="width:20%;">
 			<h4>Blog Search</h4>
 			{{ Form::open(array('action' => 'PostsController@index', 'method' => 'GET')) }}
-			{{ Form::text('search', null, array('placeholder'=>'Search'))}}
-		    <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+			{{ Form::text('search', null, array('class' => 'form-control', 'placeholder'=>'Search'))}}
+		    <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span> Search </button>
 			{{ Form::close() }}
 	</div>
 
@@ -30,7 +30,7 @@
 		@if (Auth::check())
 		<p>{{link_to_action('PostsController@edit', 'Edit', array($post->id), array('class' => 'btn btn-default'))}}</p>
 		@endif
-		<p>{{link_to_action('PostsController@show', 'Read More', array($post->id), array('class' => 'btn btn-default'))}}</p>
+		<p>{{link_to_action('PostsController@show', 'Read More', array($post->id), array('class' => 'btn btn-primary'))}}</p>
 	@endforeach
 	
 
